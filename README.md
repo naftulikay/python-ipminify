@@ -1,6 +1,9 @@
 # python-ipminify [![Build Status][travis.svg]][travis]
 
-A Python implementation of IPv4 minification using a specified alphabet.
+A Python reference implementation of IPv4 minification using a default or user-supplied alphabet.
+
+ - [About](./ABOUT.md)
+ - [Usage/Examples](./USAGE.md)
 
 ## License
 

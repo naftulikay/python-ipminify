@@ -2,6 +2,10 @@
 dist: xenial
 language: python
 python:
+  - '2.7'
+  - '3.4'
+  - '3.5'
+  - '3.6'
   - '3.7'
 
 cache:
@@ -13,7 +17,7 @@ before_install:
   - pip install -r requirements.txt
 
 install:
-  - buildout
+  - buildout -c buildout-travis.cfg
 
 script:
   - bin/test
