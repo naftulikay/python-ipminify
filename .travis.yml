@@ -1,0 +1,24 @@
+---
+dist: xenial
+language: python
+python:
+  - '3.7'
+
+cache:
+  pip: true
+  directories:
+    - eggs/
+
+before_install:
+  - pip install -r requirements.txt
+
+install:
+  - buildout
+
+script:
+  - bin/test
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
